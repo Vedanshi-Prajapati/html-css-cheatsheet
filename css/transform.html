@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            margin: 50px;
+            width:100px;
+            height: 100px;
+            box-shadow: 3px 3px grey inset;
+            background-color: rgb(189, 189, 189);
+        }
+        #rotate{
+            transform: rotate(45deg);
+        }
+        #translate{
+            transform: translate(50px);
+        }
+        #scale {
+            transform:scale(1.5) ;
+        }
+        #scaleX {
+            transform:scaleX(1.5) ;
+        }
+        #scaleY {
+            transform:scaleY(1.5) ;
+        }
+        #skewX {
+            transform:skewX(30deg) ;
+        }
+        #skewY {
+            transform:skewY(30deg) ;
+        }
+        #skew {
+            transform:skew(30deg) ;
+        }
+        #translate3d{
+
+        }
+        #rotateX{
+            transform: rotateX(150deg);
+        }
+        #rotateY{transform: rotateY(150deg);}
+        #rotate3d{transform: rotateZ(90deg);}
+        #scale3d{}
+        #perspective{
+            perspective: 100px;}
+        #rotateZ{
+
+        }
+        
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>TRANSFORM PROPERTY IN CSS</h1>
+    The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. The transformations can be of 2-D or 3-D type.<br>
+    Syntax:<br> transform: none|transform-functions|initial|inherit;
+    <h2>2-D Transforms Functions</h2>
+    <dl>
+        <dt>1. matrix </dt>
+        <dd>combines all the 2D transform functions into one.<br>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+        <div class="box" id="matrix"></div>
+        </dd>
+        <dt>2. rotate</dt>
+        <dd>rotates an element clockwise or counter-clockwise according to a given degree. Using negative values will rotate the element counter-clockwise.
+            <div class="box" id="rotate"></div>
+        </dd>
+        <dt>3. translate</dt>
+        <dd>Moves an element along the X and/or Y axis.
+            <div class="box" id="translate"></div>
+        </dd>
+        <dt>4. scale</dt>
+        <dd>increases or decreases the size of an element according to the parameters given
+            <div class="box" id="scale"></div>
+        </dd>
+        <dt>5. scaleX</dt>
+        <dd>ncreases or decreases the width of an element.
+            <div class="box" id="scaleX"></div>
+        </dd>
+        <dt>6. scaleY </dt>
+        <dd>increases or decreases the height of an element.
+            <div class="box" id="scaleY"></div>           
+        </dd>
+        <dt>7. skewX </dt>
+        <dd>skews an element along the X-axis by the given angle.
+           <div class="box" id="skewX"></div>
+        </dd>
+        <dt>8. skewY </dt>
+        <dd>skews an element along the Y-axis by the given angle.
+           <div class="box" id="skewY"></div>
+        </dd>
+        <dt>9. skew </dt>
+        <dd>skews an element along the X and Y-axis by the given angles.
+           <div class="box" id="skew"></div>
+        </dd>
+    </dl>
+    <br><hr><hr><br>
+    <h2>3-D Transforms</h2>
+    CSS 3D transforms enable the manipulation of HTML elements within a three-dimensional space, allowing for effects like rotation, translation, and scaling along the X, Y, and Z axes.
+    <br>transform-style: preserve-3d: This allows child elements to retain their 3D positioning when their parent element has a 3D transform applied, creating a unified 3D space shared by multiple elements. 
+    <br>Transformation methods are:
+    <dl>
+        <dt>1. translate3d(x, y, z)</dt>
+        <dd>Moves an element along the x, y, and z axes.
+            <div class="box" id="translate3d"></div>
+        </dd>
+        <dt>2. rotateX(angle)</dt>
+        <dd>Rotates an element around its horizontal x-axis.
+            <div class="box" id="rotateX"></div>
+        </dd>
+        <dt>3. rotateY(angle)</dt>
+        <dd>Rotates an element around its vertical y-axis.
+            <div class="box" id="rotateY"></div>
+        </dd>
+        <dt>4. rotateZ(angle)</dt>
+        <dd> Rotates an element around its z-axis, perpendicular to the screen.
+            <div class="box" id="rotateZ"></div>
+        </dd>
+        <dt>5. rotate3d(x, y, z, angle)</dt>
+        <dd>Rotates an element around an axis defined by the x, y, and z vector, at a specified angle.
+            <div class="box" id="rotate3d"></div>
+        </dd>
+        <dt>6. scale3d(x, y, z)</dt>
+        <dd>Scales an element along the x, y, and z axes, changing its width, height, and depth.
+            <div class="box" id="scale3d"></div>
+        </dd>
+        <dt>7. perspective()</dt>
+        <dd>Defines a perspective view for a 3D transformed element</dd>
+        <div class="box" id="perspective"></div>
+    </dl>
+<h1>TRANSITIONS IN CSS</h1>
+CSS transitions are used to create smooth animations between two states of an element, enhancing interactivity and user experience.
+<br> Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect.
+<br>Transition Properties are:
+<dl>
+    <dt>1. transition-delay</dt>
+        <dd>specifies when the transition effect will start, is defined in seconds (s) or milliseconds (ms).
+
+        </dd>
+    <dt>2. transition-property</dt>
+        <dd>specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).
+
+        </dd>
+    <dt>3. transition-duration</dt>
+        <dd>specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.
+
+        </dd>
+    <dt>4. transition-timing-function</dt>
+        <dd>specifies the speed curve of the transition effect.
+            <ul>
+                <li>ease</li>
+                <li>linear</li>
+                <li>ease-in</li>
+                <li>ease-out</li>
+                <li>ease-in-out</li>
+                <li>step-start</li>
+                <li>step-end</li>
+                <li>steps(int,start|end)</li>
+                <li>cubic-bezier(n,n,n,n)</li>
+                <li>initial/inherit</li>
+            </ul>
+        </dd>
+    <dt>5. Shorthand Property</dt>
+        <dd>The four individual transition properties can be combined into a single shorthand property: transition. The order of values matters within the shorthand.
+            <br>transition: <property> <duration> <timing-function> <delay>;
+
+
+        </dd>
+    <dt></dt>
+        <dd>
+
+        </dd>
+    <dt></dt>
+        <dd>
+
+        </dd>
+   
+</dl>
+<a href="./display.html"> <-Previous Page</a>
+<a href="./overflow.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+
+</body>
+</html>

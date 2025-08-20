@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>CSS SELECTORS</h1>
+    CSS selectors are used to "find" (or select) the HTML elements you want to style. A CSS selector selects the HTML element(s) you want to style.
+    <h2>Types Of Selectors</h2>
+    <ul>
+        <li>Universal Selector</li>
+        <li>Element Selector</li>
+        <li>Class Selector (.)</li>
+        <li>ID Selector (#)</li>
+        <li>Group Selector</li>
+        <li>Descendant Selector ( )</li>
+        <li>Child Selector (>)</li>
+        <li>Adjacent Sibling Selector (+)</li>
+        <li>General Sibling Selector (~)</li>
+        <li>Attribute Selector</li>
+        <li>Pseudo-class</li>
+        <li>Pseudo-element</li>
+    <table>
+        <tr>
+            <th>sr</th>
+            <th>Name</th>
+            <th>Syntax</th>
+            <th>Denoted by</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Universal Selector</td>
+            <td>*{property:value};</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Element Selector</td>
+            <td>elementName { }</td>
+            <td>eg:p{color:red;} </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Class Selector (.)</td>
+            <td>.classname{}</td>
+            <td>.</td>
+        </tr>
+        <tr> 
+            <td>4</td>
+            <td>ID Selector (#)</td>
+            <td>#idname{}</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Group Selector</td>
+            <td>selecto1,selector2,selector3{}</td>
+            <td>eg: h1,h2,p{}</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Descendant Selector ( )</td>
+            <td>ancestor_selector descendant_selector {}</td>
+            <td>eg: div p{color:red}</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Child Selector</td>
+            <td>parent_selector > child_selector{}</td>
+            <td>></td>
+        </tr>
+        <tr>
+            <td>8</td>
+             <td>Adjacent Sibling Selector (+)</td>
+            <td>selector1 + selector2{}</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>General Sibling Selector</td>
+            <td>selector1 ~ selector2{}</td>
+            <td>~</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Attribute Selector</td>
+            <td>selector[attribute]{}</td>
+            <td>[]</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Pseudo-class</td>
+            <td>selector:pseudo-class{}</td>
+            <td>:</td>
+        </tr>
+        <tr>
+            <td>12</td>
+           <td>Pseudo-element</td>
+            <td>selector::pseudo-element{}</td>
+            <td>::</td>
+        </tr>
+    </table>
+<dl>
+<dt>1. Universal Selector</dt>
+         <dd>Selects all elements on the page and applies the same style universally.<br>Example: * {
+            color: red;
+    }<br>Here, the h1 is the selector that selects all the h1 elements of our document and changes their color to red.
+        </dd>
+<dt>2. Element Selector</dt>
+        <dd>The element selector selects HTML elements (p, div, h1, etc) and applies CSS to them.<br>example: h1 {
+    color: red;
+}
+p {
+    color: orange;
+}<br>In the above example, the element selector
+
+h1 selects all h1 elements and styles their color to red
+        p selects all p elements and styles their color to orange</dd>
+<dt>3. Class Selector</dt>
+        <dd>The class selector selects the HTML element using the class attribute and applies CSS to it. The class selector is specified using the period (.) character, followed by the class name.<br>Example: .first-paragraph {
+    background-color: orange;
+}<br>The class selector .first-paragraph selects all the paragraphs having the first-paragraph class name and styles background-color to orange.
+        </dd>
+<dt>4. ID Selector </dt>
+            <dd>The id selector selects the HTML element with a unique identifier (id) and adds CSS to it.The id selector is specified using the hash (#) character, followed by the id of the element. The id selector is unique and selects one unique element.<br>Example: #second-paragraph {
+    color: red;
+            }<br>The id selector #second-paragraph selects the second paragraph and styles the text color to red.
+
+        </dd>
+<dt>5. Group Selector</dt>
+            <dd>The group selector allows you to select multiple elements and apply the same style to all of them.<br>Example: h1, p {
+    color: blue;
+            }<br>Here, the code applies CSS styling to all h1 and p elements. Notice that we have used , to separate the HTML elements..
+
+        </dd>
+<dt>6. Descendant Selector ( )</dt>
+        <dd>The CSS descendant selector targets elements that are nested anywhere within another specified element in the HTML document structure. It is represented by a single space character between two or more selectors.<br>Example: .container p {
+  color: blue;
+        }<br>In this example, both "Paragraph 1" and "Paragraph 2" would have their text color set to blue because they are both descendants of the div with the class container. "Paragraph 3" would not be affected as it is not a descendant of .container.
+
+        </dd>
+<dt>7. Child Selector (>)</dt>
+        <dd>The child selector in CSS, denoted by the > symbol, is a combinator used to select elements that are the direct children of a specified parent element. It establishes a direct parent-child relationship in the HTML document structure. <br>Example: .container > p {
+  color: blue;
+        }<br>In this example, only the first paragraph "This is a direct child paragraph." would turn blue, as it is a direct child of the div.container. The second paragraph, being a child of the section element (which is itself a child of div.container), would not be affected by this specific rule because it is not a direct child of .container.
+
+        </dd>
+<dt>8. Adjacent Sibling Selector</dt>
+        <dd>The adjacent sibling selector in CSS, denoted by a plus sign (+), selects an element that immediately follows another specified element, provided both elements share the same parent.<br>Example: h2 + p {
+  color: blue;
+}
+<br>This would only apply the blue color to the first "p" element that appears directly after an "h2" element, and not to any other "p" elements, even if they are also siblings of the h2 but not immediately adjacent.
+
+        </dd>
+<dt>9. General Sibling Selector</dt>
+        <dd>The general sibling selector in CSS, represented by the tilde symbol (~), selects all sibling elements that follow a specified element and share the same parent.<br>Example: h1 ~ p {
+  color: blue;
+}
+<br>This CSS rule would style both "Paragraph 1" and "Paragraph 2" in blue, as they are both "p" elements that are siblings of "h1" and appear after it within the same "div> parent. The 'span' element would not be affected as it is not a "p" element.
+        </dd>
+<dt>10. Attribute Selector</dt>
+        <dd>CSS attribute selectors allow targeting HTML elements based on the presence or value of their attributes. CSS attribute selectors target HTML elements based on the presence or value of their attributes. This provides a powerful way to style elements more precisely than with just class or ID selectors.<br>Example: div[target] {
+      background-color: yellow;
+        }<br>his rule would apply a yellow background to any <div> element that has a target attribute. Exact attribute value match.
+
+        </dd>
+<dt>11. Pseudo-class</dt>
+        <dd>A CSS pseudo-class is a keyword added to a selector that defines a special state of the selected element(s). It allows for styling elements based on their state or position in the document tree without adding extra classes to the HTML. A pseudo-class is a keyword added to a CSS selector, prefixed by a colon (:), to define a specific state or condition of an element. It is used to style elements like a hovered button, the first child of a container, or checked input fields.
+<br>Example: button:hover {
+            background-color: lightblue;
+            color: white;
+        }
+        </dd>
+<dt>12. Pseudo-element</dt>
+        <dd>A pseudo-element is a keyword added to a selector that lets you style specific parts of an element. For example, you can style the first line of a paragraph, add content before or after an element, or create complex effects with minimal code. Pseudo-elements are denoted by a double colon (::) (or : in legacy CSS).<br>Example: p::before {
+            content: " ";
+            color: gold;
+        }
+        </dd>
+
+</dl>
+<br>
+<a href="../html/media.html"> <-Previous Page</a>
+<a href="./csscolor.html">Next Page-></a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+
+</html>

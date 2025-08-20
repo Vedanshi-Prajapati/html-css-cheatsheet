@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Box_Model</title>
+    <style>
+        span{
+            margin:30px;
+        }
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>CSS BOX MODEL</h1>
+    The CSS Box Model is a fundamental concept in CSS that describes how every HTML element is rendered as a rectangular box on a webpage. This model defines the dimensions and spacing of elements and is crucial for controlling layout and visual presentation.<br>The box model consists of four main components, which are:
+<table>
+    <tr><th>sr</th>
+    <th>Component</th>
+    <th>Define</th>
+    <th>Property</th></tr>
+    <tr>
+        <td>1</td>
+        <td>Content</td>
+        <td>Innermost area where the actual content of the element resides, such as text, images, or other media.</td>
+        <td>width, height</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Padding</td>
+        <td>A transparent space that surrounds the content area. </td>
+        <td>padding-top, padding-right, padding-bottom, padding-left</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Border</td>
+        <td>A visible line that encloses the padding and content areas.</td>
+        <td>border-width, border-style, border-color</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Margin</td>
+        <td>A transparent space outside the border area, providing spacing between the element and neighboring elements.</td>
+        <td>margin-top, margin-right, margin-bottom, margin-left</td>
+    </tr>
+</table>
+
+    <img src="https://www.openbookproject.net/tutorials/getdown/css/images/lesson6/CSSBoxModel.png" alt="No image" style="width:400px">
+<dl>
+    <dt>1. Padding, Margin</dt>
+    <dd>
+        <ul>
+        <li>Values: pixels (px), ems (em), rems (rem), percentages (%), or keywords like auto</li>
+        <li>selector{padding-top: value; padding-right: value; padding-bottom: value; padding-left: value;}</li>
+        <li>selector{ padding: value1, value2, value3, value4; }    => padding applied in clockwise direction.</li>
+        <li>selector{ padding: value1, value2, value3;}    => padding applied in top, right & bottom.</li>
+        <li>selector{ padding: value1, value2;}    => padding applied in top-bottom & right-left.</li>
+        <li>ALSO APPLY FOR MARGIN.</li>
+        <li>The auto Value: 
+            You can set the margin property to auto to horizontally center the element within its container.
+            The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.<br>The inherit Value:
+            This lets the margin of the element be inherited from the parent element.
+
+
+
+</li>
+        </ul>
+    </dd>
+    <dt>2. Border</dt>
+    <dd>
+        <ul>
+            <li>Border Style:<br><br>
+                <span style="border: dotted; padding: 5px;">dotted</span> <span style="border:dashed; padding: 5px; ">dashed</span>
+                <span style="border: solid; padding: 5px;">solid</span>
+                <span style="border: double; padding: 5px;">double</span>
+                <span style="border: groove; padding: 5px;">groove</span>
+                <span style="border: ridge; padding: 5px;">ridge</span>
+                <span style="border: inset; padding: 5px;">inset</span>
+                <span style="border: outset; padding: 5px;">outset</span>
+            </li><br>
+            <li>Border Width:<br>
+                The border-width property specifies the width of the four borders.
+                The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).<br><br>
+                <span style="border: solid 5px; padding: 3px;">5px</span>
+                <span style="border: solid thin; padding: 3px;">thin</span>
+                <span style="border: solid medium; padding: 3px;">medium</span>
+                <span style="border: solid thick; padding: 3px;">thick</span>
+            </li><br>
+            <li>Border Color: <br>
+                used to set the color of the four borders. If border-color is not set, it inherits the color of the element. border-color property can have from one to four values.<br><br>
+                <span style="border: solid red; padding: 3px;">red</span>
+                <span style="border: solid blue; padding: 3px;">blue</span>
+                <span style="border: solid yellow; padding: 3px;">yellow</span>
+                <span style="border: solid green; padding: 3px;">green</span>
+            </li><br>
+            <li>Border Sides: <br>
+                specifies each of the borders (top, right, bottom, and left). Example: 
+                <span style="border-top: dotted red; border-right: solid blue; padding: 3px; border-bottom: dashed green; border-left: thick double blueviolet; padding: 3px;">example of border sides</span>
+            </li>
+            <li>Border - Shorthand Property:<br>
+                 The border property is a shorthand property for the following individual border properties:
+                    border-width,
+                    border-style (required),
+                    border-color.
+            </li>
+            <li>Border-radius:  is used to add rounded borders to an element. Example: <span style="border: solid; border-radius: 50px; padding: 5px;">radius 50px</span></li>
+           
+        </ul>
+    </dd>
+    <dt>3. Outline</dt>
+    <dd>
+        An outline is a line drawn outside the element's border. An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+        <ul>
+            <li>outline-style, outline-color, outline-width, shorthand=> same as border</li>
+            <li>Outline Offset: Adds transparent space between an outline and the border of an element.</li><br>
+            <span style="border: solid red; padding: 3px; outline: dotted blue; outline-offset: 2px;">example</span>
+        </ul>
+    </dd><br>
+    <dt>4. Box Shadow</dt>
+    <dd>
+        <ul>
+            <li>box-shadow property is used to apply one or more shadows to an element. In its simplest use, you only specify a horizontal and a vertical shadow. The default color of the shadow is the current text-color. </li>
+            <li>selector{ box-shadow: right, bottom, blur, color, spread, inset; }</li>
+            <li>eg: div {
+  box-shadow: 10px 10px 5px lightblue inset;
+}</li>
+            <li>An element can also have multiple shadows: div {
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}<div style="width:50%; box-shadow: 5px 5px grey, 10px 10px #DC552C, 15px 15px #21209C;">
+  <p>example content</p>
+</div>
+<br></li>
+        </ul>
+    </dd>
+    
+</dl>
+<h2>Box-sizing in CSS :</h2>
+The CSS box-sizing property determines how the width and height of an element are calculated. 
+<dl>
+    <dt>1. content-box (default):</dt>
+    <dd>This is the default behavior in CSS. When you set a width and height on an element, these dimensions apply only to the content area. The padding and border are added outside of this specified width and height, causing the element to appear larger than you initially defined.</dd>
+    <dt>2. border-box :</dt><dd>With border-box, the specified width and height of an element include the content, padding, and border. This means that if you set an element to be 200px wide, the total width, including any padding and border, will be 200px. The content area will shrink to accommodate the padding and border within the specified dimensions. 
+    </dd>
+</dl>
+<img src="https://i.ytimg.com/vi/0PcCQZWIqyc/maxresdefault.jpg" alt="No image" style="width:60%">
+<img  width="60%">
+<a href="./csscolor.html"> <-Previous Page</a>
+<a href="./background.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+ 
+</html>

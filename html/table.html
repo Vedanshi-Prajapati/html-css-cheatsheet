@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>HTML TABLE</h1>
+
+    A table in HTML consists of table cells inside rows and columns. It uses &lt;table> , &lt;tr> (table rows) , &lt;th> (table header) , &lt;td> (table data). A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+    <h2>HTML Table Tags</h2>
+    <ol>
+        
+        <li>&lt;table>	Defines a table</li>
+        <li>&lt;th>	Defines a header cell in a table. By default, table headers are bold and centered.</li>
+        <li>&lt;tr>	Defines a row in a table</li>
+        <li>&lt;td>	Defines a cell in a table</li>
+        <li>&lt;caption>	Defines a table caption</li>
+        <li>&lt;colgroup>	Specifies a group of one or more columns in a table for formatting</li>
+        <li>&lt;col>	Specifies column properties for each column within a <colgroup> element</li>
+        <li>&lt;thead>	Groups the header content in a table</li>
+        <li>&lt;tbody>	Groups the body content in a table</li>
+        <li>&lt;tfoot>	Groups the footer content in a table</li>
+    </ol>
+    <dl>
+
+        <dt>1. Table Borders</dt>
+        <dd>
+            <ul><li>To add a border, use the CSS border property on table, th, and td elements</li>
+            <li>To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.</li>
+            <li>Style table border using CSS properties like border-color, border-collapse, border-style, border-radius, background-color.</li>
+            </ul>
+        </dd>
+
+        <dt>2. Table Sizes</dt>
+        <dd>Use the style attribute with the width or height properties to specify the size of a table, row or column.
+        </dd>
+
+        <dt>3. Table Caption</dt>
+        <dd>
+            <ul><li>You can add a caption that serves as a heading for the entire table.</li>
+            <li>The &lt;caption> tag should be inserted immediately after the &lt;table> tag.</li>
+            <li>To add a caption to a table, use the &lt;caption> tag</li>
+            </ul>
+        </dd>
+
+        <dt>4. Cell Padding and Spacing</dt>
+        <dd>
+            <ul><li>Cell padding is the space between the cell edges and the cell content. Default value is 0px.</li>
+            <li>Cell spacing is the space between each cell. default value is 2px.</li>
+            <li>To add padding and spacing on table cells, use the CSS padding property on td, th.</li>
+            </ul>
+        </dd>
+
+        <dt>5. Table Colspan & Rowspan</dt>
+        <dd>
+            <ul><li>The value of the colspan and Rowspan attribute represents the number of columns and rows to span respectively.</li>
+            </ul>
+        </dd>
+
+        <dt>6. Table Styling</dt>
+        <dd>
+            <ul><li>Zebra Stripes by styling every other table row element, use the :nth-child(even) or :nth-child(odd) selector.</li>
+            <li>Vertical Zebra Stripes: To this, style every other column, instead of every other row. Set the :nth-child(even) for td or th.</li>
+            <li>Combine Vertical and Horizontal Zebra Stripes: </li>
+            <li>Horizontal Dividers: Add the border-bottom property to all tr elements to get horizontal dividers.</li>
+            <li>Hoverable Table: Use the :hover selector on tr to highlight table rows on mouse over.</li>
+            </ul>
+        </dd>
+
+        <dt>7. Table Colgroup</dt>
+        <dd>
+            <ul><li>The &lt;colgroup> element is used to style specific columns of a table. Each group is specified with a &lt;col> element.</li>
+            <li>The span attribute specifies how many columns get the style.The style attribute specifies the style to give the columns.</li>
+            <li>The <colgroup> tag must be a child of a &lt;table> element and should be placed before any other table elements, like &lt;thead>,&lt;tr>, &lt;td> etc., but after the &lt;caption> element, if present.</li>
+            <li>We can use multiple &lt;col> inside &lt;table></li>
+            </ul>
+        </dd>
+
+        <dt>8. Hide Columns</dt>
+        <dd>
+            <ul><li>You can hide columns with the visibility: collapse property:</li>
+            </ul>
+        </dd>
+
+    </dl>
+    </table>
+    <a href="./Images.html"> <-Previous Page</a>
+<a href="./list.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+    <style>
+        .box{
+            background-color: green;
+            width: 100%;
+            height: 500px;
+        }
+        @media(max-width:500px) {
+            .box{background-color: coral;}
+        }
+        @media(min-width:501px) and (max-width:600px){
+            .box{background-color: mediumpurple;}
+        }
+        @media(min-width:601px) and (max-width:900px){
+            .box{background-color: yellow;}
+        }
+        @media(min-width:901px){
+            .box{background-color:deepskyblue;}
+        }
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>Media Querry</h1>
+    CSS media queries are a powerful tool for creating responsive web designs that adapt to various screen sizes and device types. A media query is a CSS technique that allows you to apply specific styles based on a device's characteristics, such as: width and height of the viewport, orientation of the viewport (landscape or portrait), resolution, Media type(e.g., screen, print, speech) or User preferences.
+    <br>
+    <h2>Syntax:</h2>
+    A media query starts with the @media rule, followed by the media type and one or more conditions (media features) enclosed in parentheses.<br>
+    @media media-type and (media-feature-rule) {<br>
+  /* CSS styles go here */
+}
+<h2>CSS Media Types:</h2>
+<ul>
+    <li>all	- Used for all media type devices</li>
+    <li>print -	Used for print preview mode</li>
+    <li>screen - Used for computer screens, tablets, smart-phones etc.</li>
+</ul>
+Here are some commonly used media features:
+orientation, max-height, min-height, height, max-width, min-width, width	
+<h2>Example:</h2>
+Change the width of the screen and observe the changes made.
+<div class="box">
+    less than 500px: coral<br>
+    501px to 600px: purple<br>
+    601px to 900px: yellow<br>
+    more than 901px: blue
+</div>
+<br><br>
+<a href="./overflow.html"> <-Previous Page</a>
+<a href="./positions.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+</html>

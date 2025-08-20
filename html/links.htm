@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>LINKS IN HTML</h1>
+    HTML links are hyperlinks. A link does not have to be text. A link can be an image or any other HTML element. <br>
+    Anchor Tag &lt;a&gt;defines a hyperlink.<br>
+    Syntax: &lt;a href="url">link text&lt;/a&gt;
+    <dl>
+        <dt>1. target Attribute </dt>
+        <dd>specifies where to open the linked document.
+            <ul>
+                <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+                <li>_blank - Opens the document in a new window or tab</li>
+                <li>_parent - Opens the document in the parent frame</li>
+                <li>_top - Opens the document in the full body of the window</li>
+            </ul>
+        </dd>
+        
+        <dt id="eg">2. Relative URLs</dt>
+        <dd>
+            <ul>
+                <li>an absolute URL is a full web address.</li>
+                <li>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).</li>
+            </ul></dd>
+        
+
+        <dt>3. Image as a Link</dt>
+        <dd>
+            <ul>
+                <li>To use an image as a link, just put the &lt;img> tag inside the &lt;a> tag.</li>
+            </ul></dd>
+        
+
+        <dt>4. Link to an Email Address</dt>
+        <dd>
+            <ul>
+                <li>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)</li>
+                <li>eg: &lt;a href="mailto:someone@example.com">Send email&lt;/a></li>
+            </ul></dd>
+        
+
+        <dt>5. Button as a Link</dt>
+        <dd>
+            <ul>
+                <li>To use an HTML button as a link, you have to add some JavaScript code.</li>
+                <li>eg: &lt;button onclick="document.location='default.asp'">HTML Tutorial&lt;/button></li>
+            </ul></dd>
+        
+
+        <dt>6. Link Titles</dt>
+        <dd>
+            <ul>
+                <li>The title attribute specifies extra information about an element.</li>
+                <li> The information is most often shown as a tooltip text when the mouse moves over the element.</li>
+                <li>eg: &lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial&lt;/a></li>
+            </ul></dd>
+        
+            <dt>7. Link Colors</dt>
+            <dd>By default, a link will appear like this (in all browsers):
+                <ul>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
+                </ul>
+                You can change the link state colors, by using CSS:
+                <ul>
+                    <li>a:link</li><li>a:visited</li><li>a:hover</li>
+                    <li>a:active</li>
+                </ul>
+            </dd>
+            
+            <dt>8. Create Bookmarks</dt>
+            <dd>HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page. Use the id attribute (id="value") to define bookmarks in a page and use the href attribute (href="#value") to link to the bookmark.
+                <ul>
+                    <li>To create a bookmark - first create the bookmark, then add a link to it. When the link is clicked, the page will scroll down or up to the location with the bookmark.</li>
+                    <li>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page</li>
+                    <li>You can also add a link to a bookmark on another page.</li>
+                    <li>eg: &lt;h2 id="C4">Chapter 4&lt;h2><br>
+                    &lt;a href="#C4">Jump to Chapter 4&lt;/a><br>
+                    &lt;a href="html_demo.html#C4">Jump to Chapter 4&lt;/a>
+                    </li>
+                    <li> eg: <a href="#eg" style="all:unset;">Click Here To Go To Relative URL</a>
+ </li>
+                </ul>
+            </dd>
+    </dl>
+    <a href="./html2.html"> <-Previous Page</a>
+<a href="./Images.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+</html>

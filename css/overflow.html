@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oveflow</title>
+    <style>
+        #visible{
+            overflow: visible;
+        }
+        #hidden{
+            overflow:hidden;
+        }
+        #clip{
+            overflow: clip;
+        }
+         #auto{
+            overflow: auto;
+        }
+         #scroll{
+            overflow: scroll;
+        }
+        .box{
+            background-color: rgb(212, 212, 211);
+            border: 2px solid black;
+            width:400px;
+            height:90px;
+        }
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>Overflow In Css</h1>
+    The overflow property specifies what should happen if content overflows an element's box.
+    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+    <br>
+    Note: The overflow property only works for block elements with a specified height.
+    <br>Syntax:- overflow: visible|hidden|clip|scroll|auto|initial|inherit;
+    <br>Property Values are:
+    <dl>
+        <dt>1. visible</dt>
+        <dd>The overflow is not clipped. It renders outside the element's box. This is default
+            <div id="visible" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor similique quisquam illum ratione at explicabo deleniti aut enim impedit nisi harum dolores, sint sit minima saepe asperiores, suscipit dignissimos.</div><br><br>
+        </dd>
+        <dt>2. hidden</dt>
+        <dd>The overflow is clipped, and the rest of the content will be invisible. Content can be scrolled programmatically
+         <div id="hidden" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor similique quisquam illum ratione at explicabo deleniti aut enim impedit nisi harum dolores, sint sit minima saepe asperiores, suscipit dignissimos.</div></dd><br><br>
+        <dt>3. clip</dt><dd>The overflow is clipped, and the rest of the content will be invisible. Forbids scrolling, including programmatic scrolling.
+        <div id="clip" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor similique quisquam illum ratione at explicabo deleniti aut enim impedit nisi harum dolores, sint sit minima saepe asperiores, suscipit dignissimos.</div></dd><br><br>
+        <dt>4. scroll</dt><dd>The overflow is clipped, but a scroll-bar is added to see the rest of the content
+        <div id="scroll" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor similique quisquam illum ratione at explicabo deleniti aut enim impedit nisi harum dolores, sint sit minima saepe asperiores, suscipit dignissimos.</div></dd><br><br>
+        <dt>5. auto</dt><dd>If overflow is clipped, a scroll-bar should be added to see the rest of the content<div id="auto" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor similique quisquam illum ratione at explicabo deleniti aut enim impedit nisi harum dolores, sint sit minima saepe asperiores, suscipit dignissimos.</div></dd><br><br>
+    </dl>
+    <br><br>
+    <a href="./transform.html"> <-Previous Page</a>
+    <a href="./mq.html">Next Page-> </a>
+    <a href="../header.html">Go to Header Page </a>
+</body>
+</html>

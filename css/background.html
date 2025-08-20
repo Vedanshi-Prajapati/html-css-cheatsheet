@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        #a1{
+            width:60%;
+            height: 300px;
+            background-color: grey;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRq1ZxF9BO4pzpRRhRBOmLIN_kj5yFlU6ZHA&s');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 200px;
+            border: 2px solid;
+
+        }
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>BACKGROUND PROPERTIES</h1>
+CSS background properties are used to control the background styling of elements on a webpage. The background property is a shorthand property for:
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-position</li>
+        <li>background-size</li>
+        <li>background-repeat</li>
+        <li>background-origin</li>
+        <li>background-clip</li>
+        <li>background-attachment</li>
+    </ul>
+    <dl>
+        <dt>CSS Syntax:</dt><dd>background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; <br>=> initial :Sets this property to its default value & inherit:Inherits this property from its parent element.</dd></dl>
+        <table style="width:80%;">
+            <tr>
+                <th>sr</th>
+                <th>Property</th>
+                <th>About</th>
+                <th>Content</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>background-color</td>
+                <td>Sets the background color of an element. Default value is transparent.</td>
+                <td>defined using color names,rgb,hex,hsl</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>background-image</td>
+                <td>Sets one or more images as the background for an element. Supports multiple images, separated by commas, where the first image in the list is closest to the viewer.</td>
+                <td>background-image: url('');</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>background-attachment</td>
+                <td>Determines if the background image scrolls with the page or fixed.</td>
+                <td>fixed, local, scroll, initial, inherit</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>background-clip</td>
+                <td>defines how far the background (color or image) should extend within an element.</td>
+                <td>border-box, padding-box, content-box</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>background-origin</td>
+                <td>specifies the origin position (the background positioning area) of a background image. This property has no effect if background-attachment is "fixed".</td>
+                <td>border-box, padding-box, content-box</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>background-position</td>
+                <td>this property sets the starting position of a background image. It also has background-position-y and background-position-x property.</td>
+                <td>left top, left center, left bottom, right top, right center, right bottom, center top,center center, center bottom (If only one keyword is specified, the other value will be "center"), x% y%, xpos ypos </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>background-repeat</td>
+                <td>Controls how a background image is repeated.</td>
+                <td>repeat, repeat-x, repeat-y, no-repeat, space, round, initial, inherit</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>background-size</td>
+                <td>specifies the size of the background images.one valued-width and two valued-width,height</td>
+                <td>auto, length, percentage, cover, contain</td>
+            </tr>
+        </table>
+<div id="a1">
+This is an example.<br>background-color: grey;<br> background-image: url('');<br>
+             background-repeat: no-repeat;<br>
+            background-position: center;
+</div>
+<br><br>
+<a href="./CssBoxModel.html"> <-Previous Page</a>
+<a href="./FontStyling.html">Next Page->  </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+
+</html>

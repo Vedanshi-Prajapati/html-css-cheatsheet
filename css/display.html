@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../stylesheet/csstyle.css">
+<body>
+    <h1>DISPLAY PROPERTY IN CSS</h1>
+    The CSS display property controls the layout and rendering behavior of an HTML element within the document flow. It determines how an element generates its box and interacts with other elements on the page.
+    <br>Common display values and their effects:
+    <dl>
+        <dt>1. Block</dt>
+        <dd>
+            <ul>
+                <li>lock take up the full available width of their parent container.</li>
+                <li>They force a line break before and after the element, meaning other elements will be placed above or below them, not beside them.</li>
+                <li>hey accept height and width properties.</li>
+               
+            </ul>
+        </dd>
+    <dl>
+        <dt>2. Inline</dt>
+        <dd>
+            <ul>
+                <li>Elements with display: inline do not start on a new line and only occupy the necessary width and height based on their content.</li>
+                <li>They do not accept width and height properties.</li>
+                <li>They only respect horizontal margins and padding, not vertical.</li>
+             
+            </ul>
+        </dd>
+    <dl>
+        <dt>3. Inline-block</dt>
+        <dd>
+            <ul>
+                <li>This value combines characteristics of both inline and block elements.</li>
+                <li>inline-block flow like inline elements (sitting next to each other) but they also allow you to set width, height, margins (all directions), and padding.</li>
+                
+            </ul>
+        </dd>
+    <dl>
+        <dt>4. None</dt>
+        <dd>
+            <ul>
+                <li>none are completely hidden from the page and do not take up any space in the document flow.</li>
+                <li>This is often used with JavaScript to dynamically show or hide elements. </li>
+                
+            </ul>
+        </dd>
+        <dt>5. Flex:</dt>
+        <dd>
+            <ul>
+                <li>This value turns an element into a flex container, allowing for flexible and responsive layouts.</li>
+                <li>Child elements (flex items) within the container can be aligned, distributed, and resized efficiently.</li>
+                <li>Flexbox is primarily used for one-dimensional layouts (rows or columns). 
+</li>
+                
+            </ul>
+        </dd>
+
+        <dt>6. Grid</dt>
+        <dd>
+            <ul>
+                <li>This value transforms an element into a grid container, enabling a two-dimensional grid system.</li>
+                <li>It allows for the creation of layouts with rows and columns, providing precise placement of child elements. </li>
+                
+            </ul>
+        </dd>
+    </dl>
+    <br><br>
+    <a href="./FontStyling.html"> <-Previous Page</a>
+<a href="./transform.html">Next Page-> </a>
+<a href="../header.html">Go to Header Page </a>
+</body>
+</html>
